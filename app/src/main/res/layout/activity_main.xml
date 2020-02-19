@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:gravity="top|center">
+
+	<android.support.design.widget.AppBarLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+		<android.support.v7.widget.Toolbar
+			android:id="@+id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+	</android.support.design.widget.AppBarLayout>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="选择网易云缓存目录（默认情况下无需更改）："
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_gravity="left"
+		android:layout_marginTop="10dp"/>
+
+	<EditText
+		android:layout_width="match_parent"
+		android:ems="10"
+		android:layout_height="wrap_content"
+		android:text="/storage/emulated/0/netease/cloudmusic/Cache/Music1/"
+		android:id="@+id/activitymainEditText1"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="输入具体的某个文件名（若为全部则输入N)："
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_gravity="left"/>
+
+	<EditText
+		android:layout_width="match_parent"
+		android:ems="10"
+		android:layout_height="wrap_content"
+		android:text="N"
+		android:id="@+id/activitymainEditText2"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="文件输出目录："
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_gravity="left"/>
+
+	<EditText
+		android:layout_width="match_parent"
+		android:ems="10"
+		android:layout_height="wrap_content"
+		android:text="/storage/emulated/0/XuanRan/网易云缓存解析/"
+		android:id="@+id/activitymainEditText3"/>
+
+	<CheckBox
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="开始转换"
+		android:layout_marginTop="50dp"/>
+
+</LinearLayout>
+
